@@ -1,0 +1,28 @@
+{
+    "name": "coin",
+    "version": "1.0.0",
+    "description": "",
+    "main": "coin.js",
+    "scripts": {
+        "build": "workbox-cli generate:sw",
+        "start": "copyfiles -e '**/sw.js' -u 1 src/*.{html,js,css,json,png} build && node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ryoyakawai/getcoin.git"
+    },
+    "author": "Ryoya Kawai",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ryoyakawai/getcoin/issues"
+    },
+    "homepage": "https://github.com/ryoyakawai/getcoin#readme",
+    "dependencies": {
+        "express": "4.15.4",
+        "workbox-sw": "2.0.0"
+    },
+    "devDependencies": {
+        "copyfiles": "1.2.0",
+        "workbox-cli": "2.1.1"
+    }
+}
