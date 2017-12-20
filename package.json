@@ -4,8 +4,8 @@
     "description": "",
     "main": "coin.js",
     "scripts": {
-        "build": "workbox-cli generate:sw",
-        "start": "copyfiles -e '**/sw.js' -u 1 src/*.{html,js,css,json,png} build && node server.js"
+        "build": "workbox-cli generate:sw && copyfiles -e '**/sw.js' -u 1 src/*.{html,js,css,json,png} build",
+        "start": "node server.js"
     },
     "repository": {
         "type": "git",
