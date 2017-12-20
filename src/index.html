@@ -2,9 +2,9 @@
   <head>
     <title>Get Coin!</title>
     <meta property="og:title" content="Get Coin!" />
-    <meta property="og:description" content="PWA Sample" />
+    <meta property="og:description" content="ServiceWorker Sample" />
     <meta property="og:url" content="https://ryoyakawai.github.io/getcoin/index.html" />
-    <meta property="og:image" content="https://ryoyakawai.github.io/getcoin/coinicon_144x144.png" />
+    <meta property="og:image" content="https://ryoyakawai.github.io/getcoin/coinicon_200x200.png" />
     <link rel="manifest" href="./manifest.json">
     <meta name="theme-color" content="#fffce0">
     <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8">
@@ -12,13 +12,21 @@
     <link rel="stylesheet" type="text/css" href="coin.css">
   </head>
   <body>    
+    <div class="socialbutton">
+      <p>
+        <a href="http://twitter.com/share?url=https://ryoyakawai.github.io/getcoin/&text=Get Coin!(ServiceWorker Sample)&via=ryoyakawai" target="_blank">[Tweet]</a>
+        <a href="http://www.facebook.com/share.php?u=https://ryoyakawai.github.io/getcoin/" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;">[Facebook]</a>
+      </p>
+</div>
     <div id="coin" class="coin">
       <div class="front"></div>
       <div class="front_b"></div>
       <div class="back"></div>
       <div class="back_b"></div>
     </div>
-    <div class="credit">Coin CSS animation : <a href=" https://codepen.io/anon/pen/mpPYjO" target="_blank">Only CSS - 3D Coin [don't ie]</a></div>
+    <div class="credit">
+      <p>Coin CSS animation : <a href=" https://codepen.io/anon/pen/mpPYjO" target="_blank">Only CSS - 3D Coin [don't ie]</a></p>
+    </div>
   </body>
   <script type="text/javascript" src="coin.js"></script>
   <script>
@@ -55,6 +63,16 @@
                     console.log('Service Worker registration failed: ', err);
                 });
    }
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35804975-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-35804975-1');
   </script>
 
 </html>
