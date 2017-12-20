@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Get Coin!</title>
+    <meta property="og:title" content="Get Coin!" />
+    <meta property="og:description" content="PWA Sample" />
+    <meta property="og:url" content="https://ryoyakawai.github.io/getcoin/index.html" />
+    <meta property="og:image" content="https://ryoyakawai.github.io/getcoin/coinicon_144x144.png" />
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#fffce0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="coin.css">
+  </head>
+  <body>    
+    <div id="coin" class="coin">
+      <div class="front"></div>
+      <div class="front_b"></div>
+      <div class="back"></div>
+      <div class="back_b"></div>
+    </div>
+    <div class="credit">Coin CSS animation : <a href=" https://codepen.io/anon/pen/mpPYjO" target="_blank">Only CSS - 3D Coin [don't ie]</a></div>
+  </body>
+  <script type="text/javascript" src="coin.js"></script>
+  <script>
+   (function(){
+       'use strict';
+       const coin = document.querySelector('#coin');
+       const audioCtx = new AudioContext();
+
+       coin.style.setProperty('opacity', '1');
+       coin.addEventListener('mousedown',  main, false);
+       coin.addEventListener('touchstart',  main, false);
+
+       async function main(event) {
+           if(coin.style.getPropertyValue('opacity') == 0) return;
+           coin.style.setProperty('opacity', '0');
+           coin.style.setProperty('animation', 'coinspin 2s linear infinite');
+           await playCoinSound(audioCtx);
+           coin.style.setProperty('opacity', '1');
+           coin.style.removeProperty('animation');
+           event.preventDefault();
+       }
+   }());
+  </script>
+</html>

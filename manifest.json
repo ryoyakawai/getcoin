@@ -1,0 +1,13 @@
+{
+  "lang": "en",
+  "name": "Get Coin!",
+  "short_name": "Get Coin",
+  "icons": [{
+        "src": "coinicon_144x144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }],
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "https://ryoyakawai.github.io/getcoin/index.html"
+}
