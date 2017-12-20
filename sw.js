@@ -31,12 +31,16 @@ const fileManifest = [
     "revision": "3edc5d3a4321edce9a67bd5fab48f079"
   },
   {
+    "url": "coinicon_200x200.png",
+    "revision": "de2f6354cc4cf6943d8bc2557cab3dd6"
+  },
+  {
     "url": "index.html",
-    "revision": "54df2c721a79e0e8525ca0730a5f8545"
+    "revision": "88861482fc91b29e18a6de1d7ac9ff8f"
   },
   {
     "url": "main.css",
-    "revision": "aa10b2efba9922612d5d78e6db351cc6"
+    "revision": "0cbc865c7c504e0117b0c77b8613e8a6"
   },
   {
     "url": "manifest.json",
