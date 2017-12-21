@@ -35,8 +35,12 @@ const fileManifest = [
     "revision": "de2f6354cc4cf6943d8bc2557cab3dd6"
   },
   {
+    "url": "favicon.png",
+    "revision": "05cbedb4b6907e11f724f134ad175bf0"
+  },
+  {
     "url": "index.html",
-    "revision": "0d00a258cc0afd59904941ba7f3bbcea"
+    "revision": "cb824e4f821e9df935a86b417221ec52"
   },
   {
     "url": "main.css",
