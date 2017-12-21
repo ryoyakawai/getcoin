@@ -20,7 +20,7 @@ importScripts('workbox-sw.prod.v2.1.2.js');
 const fileManifest = [
   {
     "url": "coin.css",
-    "revision": "50717a84d6e367e4f08ac172945a3892"
+    "revision": "6e334b414842efe510d2bc00f97dd131"
   },
   {
     "url": "coin.js",
@@ -40,7 +40,7 @@ const fileManifest = [
   },
   {
     "url": "index.html",
-    "revision": "cb824e4f821e9df935a86b417221ec52"
+    "revision": "63c270556e22a089d648b517297d5d02"
   },
   {
     "url": "main.css",
