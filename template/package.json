@@ -1,0 +1,31 @@
+{
+  "name": "hoge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hoge.js",
+  "scripts": {
+    "build:nosw": "rimraf ./build/* && copyfiles -e '**/sw.js' -u 1 src/*.{html,js,css,json,png} build",
+    "build:sw": "workbox-cli generate:sw && copyfiles -e '**/sw.js' -u 1 src/*.{html,js,css,json,png} build",
+    "build:remove": "rimraf ./build",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoge/hoge.git"
+  },
+  "author": "Hoge Hoge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoge/hoge/issues"
+  },
+  "homepage": "https://github.com/hoge/hoge#readme",
+  "dependencies": {
+    "express": "4.15.4",
+    "rimraf": "^2.6.2",
+    "workbox-sw": "2.0.0"
+  },
+  "devDependencies": {
+    "copyfiles": "1.2.0",
+    "workbox-cli": "2.1.1"
+  }
+}
